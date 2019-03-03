@@ -1,0 +1,158 @@
+php_value upload_max_filesize 10M
+php_value post_max_size 100M
+php_value open_basedir "/home/admin/tmp/:/tmp/:"
+
+# Turn on URL rewriting
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [R=301,L]
+#RewriteCond %{REQUEST_URI} (.*/[^/.]+)($|\?)
+#RewriteRule .* %1/ [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www\.vanilastudio\.ru$ [NC]
+#RewriteRule ^(.*)$ http://vanilastudio.ru/$1 [R=301,L]
+
+# Installation directory
+RewriteBase /
+
+# Protect hidden files from being viewed
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+# Protect application and system files from being viewed
+RewriteRule ^(?:application|modules|system)\b.* index.php/$0 [L]
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php/$0 [PT]
+
+#error
+# Kohana environment
+SetEnv KOHANA_ENV DEVELOPMENT
+#SetEnv KOHANA_ENV PRODUCTION
+
+Redirect 301	/product/c370/	http://vanilastudio.ru/product/ab-c370/
+Redirect 301	/product/hloya/	http://vanilastudio.ru/product/chloe/
+Redirect 301	/product/elche-2/	http://vanilastudio.ru/product/elche/
+Redirect 301	/product/art-1609-2/	http://vanilastudio.ru/product/s1609/
+Redirect 301	/product/art-1692/	http://vanilastudio.ru/product/s1692/
+Redirect 301	/product/art-1703/	http://vanilastudio.ru/product/s1703/
+Redirect 301	/product/art-1709/	http://vanilastudio.ru/product/s1709/
+Redirect 301	/product/art-1730/	http://vanilastudio.ru/product/s1730/
+Redirect 301	/product/art-2036/	http://vanilastudio.ru/product/s2036/
+Redirect 301	/product/art-310/	http://vanilastudio.ru/product/s310/
+Redirect 301	/product/art-7001/	http://vanilastudio.ru/product/jp-7001/
+Redirect 301	/product/art-7005/	http://vanilastudio.ru/product/jp-7005/
+Redirect 301	/product/art-7007/	http://vanilastudio.ru/product/jp-7007/
+Redirect 301	/product/art-7008/	http://vanilastudio.ru/product/jp-7008/
+Redirect 301	/product/art-7011/	http://vanilastudio.ru/product/jp-7011/
+Redirect 301	/product/art-7014/	http://vanilastudio.ru/product/jp-7014/
+Redirect 301	/product/art-7017/	http://vanilastudio.ru/product/jp-7017-/
+Redirect 301	/product/art-7021/	http://vanilastudio.ru/product/jp-7021/
+Redirect 301	/product/art-7027/	http://vanilastudio.ru/product/jp-7027/
+Redirect 301	/product/art-7028/	http://vanilastudio.ru/product/jp-7028/
+Redirect 301	/product/art-7029/	http://vanilastudio.ru/product/jp-7029/
+Redirect 301	/product/art-7035/	http://vanilastudio.ru/product/jp-7035/
+Redirect 301	/product/art-7048/	http://vanilastudio.ru/product/jp-7048/
+Redirect 301	/product/art-7056/	http://vanilastudio.ru/product/jp-7056/
+Redirect 301	/product/art-7062/	http://vanilastudio.ru/product/jp-7062/
+Redirect 301	/product/art-7067/	http://vanilastudio.ru/product/jp-7067/
+Redirect 301	/product/9310-2/	http://vanilastudio.ru/product/ab-9310/
+Redirect 301	/product/9318-2/	http://vanilastudio.ru/product/ab-9318/
+Redirect 301	/product/art-os-30/	http://vanilastudio.ru/product/os-30/
+Redirect 301	/product/art-6026/	http://vanilastudio.ru/product/jp-6026/
+Redirect 301	/product/art-6027/	http://vanilastudio.ru/product/jp-6027/
+Redirect 301	/product/art-6032/	http://vanilastudio.ru/product/jp-6032/
+Redirect 301	/product/art-6053/	http://vanilastudio.ru/product/jp-6053/
+Redirect 301	/product/art-6079/	http://vanilastudio.ru/product/jp-6079/
+Redirect 301	/articles/platievybor/	http://vanilastudio.ru/articles/svadebnoe-plate-kupit-sshit-ili-vzyat-na-prokat/
+Redirect 301	/articles/platieprodazha/	http://vanilastudio.ru/articles/prodazha-svadebnogo-platya-kak-ee-vygodnee-organizovat/
+Redirect 301	/articles/internet-magazin-svadebnyx-platev-brat-ili-ne-brat-vot-v-chem-vopros/	http://vanilastudio.ru/articles/internet-magazin-svadebnyh-platev-brat-ili-ne-brat-vot-v-chem-vopros/
+Redirect 301	/articles/platieberemen/	http://vanilastudio.ru/articles/svadebnye-platya-dlya-beremennyh-kak-vybrat-podhodyaschee/
+Redirect 301	/articles/vyborplatienevesta/	http://vanilastudio.ru/articles/vybor-svadebnogo-platya-eto-ne-legkaya-zadacha/
+Redirect 301	/articles/platiefigura/	http://vanilastudio.ru/articles/svadebnoe-plate-vybiraem-po-figure/
+Redirect 301	/articles/platieakses/	http://vanilastudio.ru/articles/vybor-svadebnogo-platya-i-svadebnyh-aksessuarov/
+Redirect 301	/articles/platiecvet/	http://vanilastudio.ru/articles/svadebnoe-plate-igraem-s-cvetom/
+Redirect 301	/articles/naryadexclusive/	http://vanilastudio.ru/articles/naryad-nevesty-vybiraem-eksklyuziv/
+Redirect 301	/articles/platiekrasota/	http://vanilastudio.ru/articles/svadebnoe-plate-krasota-i-udobstvo/
+Redirect 301	/articles/kupit-svadebnye-platya-v-moskve-katalog-platev-2013-goda-v-salone-vanil/	http://vanilastudio.ru/articles/katalog-platev-2015-goda-v-salone-vanil/
+Redirect 301	/product/hp-b1500/	http://vanilastudio.ru/product/hp-1500/
+Redirect 301	/kontakty/	http://vanilastudio.ru/contacts/
+Redirect 301	/svadebnie/korotkie-platya/	http://vanilastudio.ru/product-category/korotkie-platya/
+Redirect 301	/product/lulu-3/	http://vanilastudio.ru/product/lulu/
+Redirect 301	/articles/modnye-svadebnye-platya-2016/	http://vanilastudio.ru/articles/modnye-svadebnye-platya-2016-yarkie-trendy-goda/
+Redirect 301	/articles/neobychnye-svadebnye-platya-fotoobzor-trendy-goda/	http://vanilastudio.ru/articles/neobychnye-svadebnye-platya/
+Redirect 301	/articles/platieoriginal/	http://vanilastudio.ru/articles/nevesta-byt-originalnoe-legko/
+Redirect 301	/otzyvy/	http://vanilastudio.ru/reviews/
+Redirect 301	/svadebnie/pyshnye-platya/	http://vanilastudio.ru/product-category/ball-gown/
+Redirect 301	/product/s371/	http://vanilastudio.ru/product/ab-c371/
+Redirect 301	/product-category/nizhnee-belyo/	http://vanilastudio.ru/product-category/nizhnee-bele/
+Redirect 301	/product/art-5000/	http://vanilastudio.ru/product/jp-5000/
+Redirect 301	/product/art-os-7/	http://vanilastudio.ru/product/os-7/
+Redirect 301	/product/rozetta-2/	http://vanilastudio.ru/product/rozetta/
+Redirect 301	/product/art-4031/	http://vanilastudio.ru/product/jp-4031/
+Redirect 301	/product/art-5062/	http://vanilastudio.ru/product/jp-5062/
+Redirect 301	/product/art-4047/	http://vanilastudio.ru/product/jp-4047/
+Redirect 301	/product/art-os-9/	http://vanilastudio.ru/product/os-9/
+Redirect 301	/product/tejlor/	http://vanilastudio.ru/product/teylor/
+Redirect 301	/product/melrouz-2/	http://vanilastudio.ru/product/melrose/
+Redirect 301	/product/santafe/	http://vanilastudio.ru/product/santa-fe-/
+Redirect 301	/product/mlory/	http://vanilastudio.ru/product/melory/
+Redirect 301	/product/rusalka-2/	http://vanilastudio.ru/product/ruzal/
+Redirect 301	/product/art-5088/	http://vanilastudio.ru/product/jp-5088/
+Redirect 301	/product/sanset/	http://vanilastudio.ru/product/sunset/
+Redirect 301	/product-category/aksessuary/	http://vanilastudio.ru/accessories/
+Redirect 301	/product-category/perchatki-i-mitenki/	http://vanilastudio.ru/product-category/perchatki-i-manzhety/
+Redirect 301	/product-category/svadebnye-platya/	http://vanilastudio.ru/dresses/
+Redirect 301	/product-category/allure/	http://vanilastudio.ru/product-category/allure-bridals/
+Redirect 301	/product-category/helen-miller-green/	http://vanilastudio.ru/product-category/helen-miller/
+Redirect 301	/product-category/rosa-clara-svadebnye-platya/	http://vanilastudio.ru/product-category/rosa-clara/
+Redirect 301	/svadebnie/a-obraznyj-siluet/	http://vanilastudio.ru/product-category/a-line/
+Redirect 301	/articles/plyazhnayasvadba/	http://vanilastudio.ru/articles/svadba-na-plyazhe/
+Redirect 301	/articles/svadebnye-platya-dlya-polnyx-devushek/	http://vanilastudio.ru/articles/svadebnye-platya-dlya-polnyh-devushek-fotoobzor-modeley-2016-goda/
+Redirect 301	/svadebnie/rusalka/	http://vanilastudio.ru/product-category/rusalka/
+Redirect 301	/articles/korsetnye-svadebnye-platya/	http://vanilastudio.ru/articles/platya-s-korsetom/
+Redirect 301	/articles/blackdress/	http://vanilastudio.ru/articles/svadebnoe-plate-temnyh-tonov/
+Redirect 301	/articles/svadebnye-platya-transformery/	http://vanilastudio.ru/articles/platya-transformery/
+Redirect 301	/articles/primety/	http://vanilastudio.ru/articles/svadebnye-primety-verit-ili-net/
+Redirect 301	/studiya/	http://vanilastudio.ru/boutique/
+Redirect 301	/articles/svadbamore/	http://vanilastudio.ru/articles/svadba-u-morya-vybiraem-svadebnyy-naryad/
+Redirect 301	/articles/urokisvadby/	http://vanilastudio.ru/articles/uroki-svadby/
+Redirect 301	/product/miryam/	http://vanilastudio.ru/product/miriam/
+Redirect 301	/product/sally-2/	http://vanilastudio.ru/product/sally/
+Redirect 301	/product-category/buduar/	http://vanilastudio.ru/product-category/buduarnoe-bele/
+Redirect 301	/svadebnie/pryamoj-siluet/	http://vanilastudio.ru/product-category/pryamoy-siluet/
+Redirect 301	/product-category/nakidki-i-shubki/	http://vanilastudio.ru/product-category/shubki-i-puhoviki/
+Redirect 301	/svadebnie/stil-ampir/	http://vanilastudio.ru/product-category/stil-ampir/
+Redirect 301	/product-category/ozlem-suer/	http://vanilastudio.ru/product-category/oslem-suer/
+Redirect 301	/product-category/sanpatrick/	http://vanilastudio.ru/product-category/st-patrick/
+Redirect 301	/product-category/two-by-rosa-clara/	http://vanilastudio.ru/product-category/rosa-clara-two/
+Redirect 301	/product/art-6015	http://vanilastudio.ru/product/jp-6015/
+Redirect 301    /articles/svadebnye-platya-so-shleyfom/   http://vanilastudio.ru/product-category/dlinnyy-shleyf/
+Redirect 301    /articles/svadebnoe-plate-so-shleyfom/    http://vanilastudio.ru/product-category/dlinnyy-shleyf/
+Redirect 301    /articles/korotkoe-svadebnoe-plate-s-dlinnym-shleyfom/   http://vanilastudio.ru/articles/korotkoe-svadebnoe-plate-s-dlinnoy-yubkoy/
+Redirect 301   /articles/svadebnoe-plate-cveta-ayvori/    http://vanilastudio.ru/product-category/ayvori/
+Redirect 301    /articles/svadebnye-platya-cveta-ayvori/   http://vanilastudio.ru/product-category/ayvori/
+Redirect 301   /articles/cvadebnoe-plate-a-silueta/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/svadebnoe-plate-s-kruzhevom/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/korotkoe-kruzhevnoe-svadebnoe-plate/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/svadebnye-platya-s-kruzhevnymi-rukavami/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/svadebnoe-plate-s-kruzhevnym-verhom/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/svadebnoe-plate-so-shleyfom/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/svadebnoe-plate-iz-fatina-i-kruzheva/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/atlasnoe-svadebnoe-plate-s-kruzhevom/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/pryamoe-kruzhevnoe-svadebnoe-plate/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301   /articles/kruzhevnoe-svadebnoe-plate-v-pol/    http://vanilastudio.ru/product-category/kruzhevnoe/
+Redirect 301	/без-рубрики/ny2015/	http://vanilastudio.ru/product-category/kruzhevnoe/
+
+
+
+

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /media
+Disallow: /?p*
+Sitemap: https://vanilastudio.ru/sitemap.xml
+
+User-agent: Yandex
+Host: https://vanilastudio.ru

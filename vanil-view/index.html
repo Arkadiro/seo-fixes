@@ -1,0 +1,1197 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>VANILA</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=vMr68weMl2">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png?v=vMr68weMl2" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png?v=vMr68weMl2" sizes="16x16">
+	<link rel="manifest" href="/manifest.json?v=vMr68weMl2">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=vMr68weMl2" color="#ffffff">
+	<link rel="shortcut icon" href="/favicon.ico?v=vMr68weMl2">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="css/libs/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css?v=1.0">	
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<svg style="display: none"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<symbol id="arrow-1" viewBox="0 0 13 13"><g id="arr-right"><polygon class="st2" points="6.3,0 5.6,0.7 11.1,6 0,6 0,7 11.1,7 5.6,12.3 6.3,13 13,6.5"/></g></symbol>
+		<symbol id="share-twitter" viewBox="0 0 22.3333 17.2266"><path d="M7.0236,17.2266A12.608,12.608,0,0,0,20.06069,4.855c0-.188-.0041-.3762-.0133-.5635A9.07124,9.07124,0,0,0,22.3333,2.0401a9.50687,9.50687,0,0,1-2.6312.6856A4.41575,4.41575,0,0,0,21.7168.3192a9.49643,9.49643,0,0,1-2.9093,1.0552A4.69753,4.69753,0,0,0,15.4628,0a4.4719,4.4719,0,0,0-4.58291,4.3502,4.12129,4.12129,0,0,0,.11931.9899A13.25165,13.25165,0,0,1,1.55459.7977a4.167,4.167,0,0,0-.6207,2.1862A4.29327,4.29327,0,0,0,2.973,6.6031,4.74455,4.74455,0,0,1,.89769,6.0587c-.0011.0181-.0011.0372-.0011.0552a4.41475,4.41475,0,0,0,3.6762,4.2636,4.80761,4.80761,0,0,1-1.20789.1534,4.9239,4.9239,0,0,1-.86151-.0784,4.56728,4.56728,0,0,0,4.2808,3.0212A9.506,9.506,0,0,1,1.093,15.334,9.98562,9.98562,0,0,1,0,15.2738a13.48239,13.48239,0,0,0,7.0236,1.9528"/></symbol>
+		<symbol id="share-facebook" viewBox="0 0 11.5419 21"><path d="M7.49157,21V11.42022H10.8947l.50959-3.73267H7.49157V5.30441c0-1.08152.31792-1.81809,1.95781-1.81809H11.5419V.14738A29.26426,29.26426,0,0,0,8.49333,0c-3.0167,0-5.0814,1.73946-5.0814,4.934V7.68756H0v3.73267H3.41193V21Z"/></symbol>
+		<symbol id="close-modal" viewBox="0 0 21.87354 21.85352"><g><polygon points="21.87354,21.14648 11.57056,10.84351 21.70703,0.70703 21,0 10.86353,10.13647 0.87354,0.14648 0.1665,0.85352 10.15649,10.84351 0,21 0.70703,21.70703 10.86353,11.55054 21.1665,21.85352"/></g></symbol>
+		<symbol id="search" viewBox="0 0 14.49854 14.83203"><g><path d="M14.49854,13.41797l-3.32782-3.32782C12.00049,9.0293,12.5,7.69812,12.5,6.25C12.5,2.80371,9.69629,0,6.25,0 S0,2.80371,0,6.25s2.80371,6.25,6.25,6.25c1.27716,0,2.46503-0.38666,3.45569-1.04675l3.37878,3.37878L14.49854,13.41797z M2,6.25 C2,3.90674,3.90674,2,6.25,2s4.25,1.90674,4.25,4.25S8.59326,10.5,6.25,10.5S2,8.59326,2,6.25z"/></g></symbol>
+	</svg>
+	<div class="wrapper">
+		<header role="navigation" class="header-wrapper">
+			<div class="header">
+				<div class="header-layout">
+					<div class="header-holder">
+						<div class="header__area-left">
+							<a href="#" class="mob-menu-toggler side-nav-toggler">
+								<span class="mob-menu-toggler__ic"></span>
+								Menu
+							</a>
+							<ul class="nav-map">
+								<li class="nav-map__item"><a href="#" class="nav-map__link">Boutique</a></li>
+								<li class="nav-map__item"><a href="#" class="nav-map__link">Reviews</a></li>
+								<li class="nav-map__item"><a href="#" class="nav-map__link">Articles</a></li>
+								<li class="nav-map__item"><a href="#" class="nav-map__link">Contact Us</a></li>
+							</ul>
+							<div class="header-menus">
+								<div class="header-menu header-menu--dresses">
+									<div class="header-menu__title">Bridal dresses</div>
+									<div class="header-sub-menu">
+										<ul class="header-sub-menu__col header-sub-menu__col--brands">
+											<li class="header-sub-menu__col-item header-sub-menu__col-title">Brands and designers</li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Allure Bridals</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Casablanca</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Helen Miller</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Jesus Peiro</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Ronald Joyce</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">St. Patrick</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Turkish Designers</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">White One</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">All brands</a></li>
+										</ul>
+										<ul class="header-sub-menu__col header-sub-menu__col--silhouettes">
+											<li class="header-sub-menu__col-item header-sub-menu__col-title">Silhouettes</li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">A-line</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Ball gown</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Empire</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Matemity</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Mermaid</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Plus size</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Sheath</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Short</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">All silhuettes</a></li>
+										</ul>
+										<ul class="header-sub-menu__col header-sub-menu__col--tags">
+											<li class="header-sub-menu__col-item header-sub-menu__col-title">Popular tags</li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">San Patrick</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">plus size</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">empire</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">red</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag tag--green"><span class="tag__name">a-line</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">winter dress</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">summer</span></a></li>
+											
+										</ul>
+									</div>
+								</div>
+								<div class="header-menu header-menu--access">
+									<div class="header-menu__title">Accessories</div>
+									<div class="header-sub-menu">
+										<ul class="header-sub-menu__col header-sub-menu__col--brands">
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Allure Bridals</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Casablanca</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Helen Miller</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Jesus Peiro</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Ronald Joyce</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">St. Patrick</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Turkish Designers</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">White One</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">All brands</a></li>
+										</ul>
+										<ul class="header-sub-menu__col header-sub-menu__col--tags">
+											<li class="header-sub-menu__col-item header-sub-menu__col-title">Popular tags</li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">San Patrick</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">plus size</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">empire</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">red</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag tag--green"><span class="tag__name">a-line</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">winter dress</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">summer</span></a></li>
+										</ul>
+									</div>									
+								</div>
+							</div>
+						</div>
+						<div class="header__area-right">
+							<div class="header-right-l-t">
+								<a href="tel:+971 50-785-8383"class="header-phone-item header-phone-item--whatsup">+971 50-785-8383</a>
+								<a href="#" class="header-favourites"><span class="header-favourites__counter">3</span></a>
+							</div>
+							<a href="#" class="appointment-btn header-appointment">Make an appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+							<a href="#" class="appointment-btn header-appointment header-appointment--mob">Appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+						</div>
+						<div class="header__area-mid">
+							<a href="/" class="header__logo">
+								<img src="img/logo.svg" class="header__logo-img" alt="VANILA Studio"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mini-header" data-distance="500">
+				<div class="mini-header-layout">
+					<div class="mini-header-holder">
+						<div class="mini-header-c mini-header-c--l">
+							<a href="#" class="mob-menu-toggler side-nav-toggler">
+								<span class="mob-menu-toggler__ic"></span>
+								Menu
+							</a>
+							<div class="mini-header-menus">
+								<div class="mini-header-menu mini-header-menu--dresses">
+									<div class="mini-header-menu__title">Bridal dresses</div>
+									<div class="header-sub-menu">
+										<ul class="header-sub-menu__col header-sub-menu__col--brands">
+											<li class="header-sub-menu__col-item header-sub-menu__col-title">Brands and designers</li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Allure Bridals</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Casablanca</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Helen Miller</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Jesus Peiro</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Ronald Joyce</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">St. Patrick</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Turkish Designers</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">White One</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">All brands</a></li>
+										</ul>
+										<ul class="header-sub-menu__col header-sub-menu__col--silhouettes">
+											<li class="header-sub-menu__col-item header-sub-menu__col-title">Silhouettes</li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">A-line</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Ball gown</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Empire</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Matemity</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Mermaid</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Plus size</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Sheath</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Short</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">All silhuettes</a></li>
+										</ul>
+										<ul class="header-sub-menu__col header-sub-menu__col--tags">
+											<li class="header-sub-menu__col-item header-sub-menu__col-title">Popular tags</li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">San Patrick</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">plus size</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">empire</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">red</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag tag--green"><span class="tag__name">a-line</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">winter dress</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">summer</span></a></li>
+											
+										</ul>
+									</div>
+								</div>
+								<div class="mini-header-menu mini-header-menu--access">
+									<div class="mini-header-menu__title">Accessories</div>
+									<div class="header-sub-menu">
+										<ul class="header-sub-menu__col header-sub-menu__col--brands">
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Allure Bridals</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Casablanca</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Helen Miller</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Jesus Peiro</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Ronald Joyce</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">St. Patrick</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">Turkish Designers</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">White One</a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="header-sub-menu__col-link">All brands</a></li>
+										</ul>
+										<ul class="header-sub-menu__col header-sub-menu__col--tags">
+											<li class="header-sub-menu__col-item header-sub-menu__col-title">Popular tags</li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">San Patrick</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">plus size</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">empire</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">red</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag tag--green"><span class="tag__name">a-line</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">ball gown</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">winter dress</span></a></li>
+											<li class="header-sub-menu__col-item"><a href="#" class="tag"><span class="tag__name">summer</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mini-header-c mini-header-c--m">
+							<a href="/" class="mini-header-logo">
+								<img src="img/logo--small.svg" class="mini-header-logo__img" alt=""/>
+							</a>
+						</div>
+						<div class="mini-header-c mini-header-c--r">
+							<a href="tel:+971 50 785 8383"class="mini-header-phone">+971 50 785 8383</a>
+							<a href="#" class="button dark filled mini-header-appointment" role="button">Make an appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+							<a href="#" class="button dark filled mini-header-appointment mini-header-appointment--mob" role="button">Appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mob-menu">
+				<div class="mob-menu-inner">
+					<div class="mob-menu-heading">
+						<a href="#" class="header-favourites header-favourites--mob-menu"><span class="add-lined">My favorites</span><span class="header-favourites__counter header-favourites__counter--mob-menu">3</span></a>
+						<a href="#" class="mob-menu-esc side-nav-toggler"></a>
+					</div>
+					<div class="mob-menu-content">
+						<div class="mob-menu-list-holder is-expanded">
+							<a href="#" class="mob-menu-list-header">Bridal dresses</a>
+							<div class="mob-menu-list-c-cont">
+								<ul class="mob-menu-list-c">
+									<li class="mob-menu-list-item mob-menu-list-item--title"><a href="#" class="mob-menu-list-link">Designers</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Allure Bridals</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Casablanca</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Helen Miller</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Jesus Peiro</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Ronald Joyce</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">St. Patrick</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Two by Rosa Clara</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">White One</a></li>
+								</ul>
+								<ul class="mob-menu-list-c">
+									<li class="mob-menu-list-item mob-menu-list-item--title"><a href="#" class="mob-menu-list-link">Sihouettes</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">A-line</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Ball gown</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Empire</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Matemity</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Mermaid</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Plus size</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Sheath</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Short</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="mob-menu-list-holder">
+							<a href="#" class="mob-menu-list-header">Accessories</a>
+							<div class="mob-menu-list-c-cont">
+								<ul class="mob-menu-list-c">
+									<li class="mob-menu-list-item mob-menu-list-item--title"><a href="#" class="mob-menu-list-link">Designers</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Allure Bridals</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Casablanca</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Helen Miller</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Jesus Peiro</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Ronald Joyce</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">St. Patrick</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Two by Rosa Clara</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">White One</a></li>
+								</ul>
+								<ul class="mob-menu-list-c">
+									<li class="mob-menu-list-item mob-menu-list-item--title"><a href="#" class="mob-menu-list-link">Sihouettes</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">A-line</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Ball gown</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Empire</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Matemity</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Mermaid</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Plus size</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Sheath</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Short</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="mob-menu-list-holder">
+							<a href="#" class="mob-menu-list-header">About</a>
+							<div class="mob-menu-list-c-cont">
+								<ul class="mob-menu-list-c">
+									<li class="mob-menu-list-item mob-menu-list-item--title"><a href="#" class="mob-menu-list-link">Boutique</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">About</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Contact us</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Vacancies</a></li>
+								</ul>
+								<ul class="mob-menu-list-c">
+									<li class="mob-menu-list-item mob-menu-list-item--title"><a href="#" class="mob-menu-list-link">Reviews</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Ask us a question</a></li>
+									<li class="mob-menu-list-item"><a href="#" class="mob-menu-list-link">Write a review</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main role="main">
+			<section class="section section--home-banner">
+				<div class="home-banner">
+					<div class="home-banner-slider swiper-container is-loading" data-speed="5000">
+						<div class="swiper-wrapper">
+							<div class="home-banner-slide swiper-slide">
+								<div class="home-banner-slide-wrapper">
+									<div class="home-banner-slide__image">
+										<img src="img/home-banner/home-banner-1--s.jpg" class="home-banner-img home-banner-img--s js-of" alt=""/>
+										<img src="img/home-banner/home-banner-1--m.jpg" class="home-banner-img home-banner-img--m js-of" alt=""/>
+										<img src="img/home-banner/home-banner-1.jpg" class="home-banner-img js-of" alt=""/>
+									</div>
+									<div class="home-banner-slide__content">
+										<div class="home-banner-slide-headers">
+											<div class="home-banner-slide__text home-banner-slide__text--header"><a href="#" class="custom-lined">Helen Miller</a></div>
+											<div class="home-banner-slide__text home-banner-slide__text--subheader"><a href="#" class="custom-lined">Rose collection</a></div>
+										</div>
+										<div class="home-banner-slide__text home-banner-slide__text--link"><a href="#" class="button light home-banner-slide__link" role="button">learn more<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a></div>
+									</div>
+								</div>
+							</div>
+							<div class="home-banner-slide swiper-slide">
+								<div class="home-banner-slide-wrapper">
+									<div class="home-banner-slide__image">
+										<img src="img/home-banner/home-banner-1--s.jpg" class="home-banner-img home-banner-img--s js-of" alt=""/>
+										<img src="img/home-banner/home-banner-1--m.jpg" class="home-banner-img home-banner-img--m js-of" alt=""/>
+										<img src="img/home-banner/home-banner-1.jpg" class="home-banner-img js-of" alt=""/>
+									</div>
+									<div class="home-banner-slide__content">
+										<div class="home-banner-slide-headers">
+											<div class="home-banner-slide__text home-banner-slide__text--header"><a href="#" class="custom-lined">Helen Miller</a></div>
+											<div class="home-banner-slide__text home-banner-slide__text--subheader"><a href="#" class="custom-lined">Rose collection</a></div>
+										</div>
+										<div class="home-banner-slide__text home-banner-slide__text--link"><a href="#" class="button light home-banner-slide__link" role="button">learn more<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="home-banner-pagination"></div>
+						<div class="home-banner-nav home-banner-nav--p"></div>
+						<div class="home-banner-nav home-banner-nav--n"></div>
+					</div>
+					<div class="scroll-down-container">
+						<a href="#" class="scroll-down" title="Scroll"><img src="img/ic/scroll.svg" class="scroll-down__ic" alt=""/><img src="img/ic/scroll--s.svg" class="scroll-down__ic scroll-down__ic--mob" alt=""/></a>
+					</div>
+				</div>
+			</section>
+			<section class="section section--our-choice">
+				<header class="section-header">Our choice</header>
+				<div class="gl gl--normal">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<div class="gl-col gl-col--slider">
+								<a href="#" class="gl-col__a">
+									<div class="gl-slider swiper-container">
+										<div class="swiper-wrapper">
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-1.jpg" class="gl-image js-of" alt=""/>
+											</div>
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-1.jpg" class="gl-image js-of" alt=""/>
+											</div>
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-1.jpg" class="gl-image js-of" alt=""/>
+											</div>
+										</div>
+										<div class="gl-slider-pagination"></div>
+										<div class="gl-slider-nav gl-slider-nav--p"></div>
+										<div class="gl-slider-nav gl-slider-nav--n"></div>
+									</div>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Chantilly-10</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+										<a href="#" class="tag"><span class="tag__name">plus size</span></a>
+										<a href="#" class="tag"><span class="tag__name">summer</span></a>
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+										<a href="#" class="tag"><span class="tag__name">plus size</span></a>
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+										<a href="#" class="tag"><span class="tag__name">plus size</span></a>
+										<a href="#" class="tag"><span class="tag__name">summer</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col gl-col--slider gl-col--fav">
+								<a href="#" class="gl-col__a">
+									<div class="gl-slider swiper-container">
+										<div class="swiper-wrapper">
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-2.jpg" class="gl-image js-of" alt=""/>
+											</div>
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-2.jpg" class="gl-image js-of" alt=""/>
+											</div>
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-2.jpg" class="gl-image js-of" alt=""/>
+											</div>
+										</div>
+										<div class="gl-slider-pagination"></div>
+										<div class="gl-slider-nav gl-slider-nav--p"></div>
+										<div class="gl-slider-nav gl-slider-nav--n"></div>
+									</div>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Toffi</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col gl-col--slider gl-col--fav">
+								<a href="#" class="gl-col__a">
+									<div class="gl-slider swiper-container">
+										<div class="swiper-wrapper">
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-3.jpg" class="gl-image js-of" alt=""/>
+											</div>
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-3.jpg" class="gl-image js-of" alt=""/>
+											</div>
+											<div class="gl-slide swiper-slide">
+												<img src="img/catalog/catalog-3.jpg" class="gl-image js-of" alt=""/>
+											</div>
+										</div>
+										<div class="gl-slider-pagination"></div>
+										<div class="gl-slider-nav gl-slider-nav--p"></div>
+										<div class="gl-slider-nav gl-slider-nav--n"></div>
+									</div>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Pandora</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col gl-col--addhid">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-2.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Addintional hidden</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gl gl--selection">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<div class="gl-col gl-col--selection">
+								<div class="gl-col__a">
+									<img src="img/catalog/selection-1.jpg" class="gl-image js-of" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<a href="#" class="selection-text">
+										<span class="selection-header"><span class="selection-text-item custom-lined">25 dresses</span></span>
+										<span class="selection-subheader"><span class="selection-text-item custom-lined">in vintage</span></span>
+										<span class="selection-subheader"><span class="selection-text-item custom-lined">style</span></span>
+									</a>
+									<div class="selection-btns">
+										<a href="#" class="button light selection-btn" role="button">read more<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+										<a href="#" class="appointment-btn">make an appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+									</div>
+								</div>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-4.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Chantilly-10</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gl gl--review">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<div class="gl-col gl-col--review">
+								<div class="gl-col__a">
+									<div class="gl-review-slider swiper-container">
+										<div class="swiper-wrapper">
+											<div class="gl-review-slide swiper-slide">
+												<blockquote class="quote">
+													<p class="quote__text">The dress was an absolute hit! thank you ladies especially Nada will send professional photos when I get them!</p>
+													<span class="quote__author"><cite>Tanja Kostic</cite></span>
+												</blockquote>
+											</div>
+											<div class="gl-review-slide swiper-slide">
+												<blockquote class="quote">
+													<p class="quote__text">The dress was an absolute hit! thank you ladies especially Nada will send professional photos when I get them!</p>
+													<span class="quote__author"><cite>Tanja Kostic</cite></span>
+												</blockquote>
+											</div>
+											<div class="gl-review-slide swiper-slide">
+												<blockquote class="quote">
+													<p class="quote__text">The dress was an absolute hit! thank you ladies especially Nada will send professional photos when I get them!</p>
+													<span class="quote__author"><cite>Tanja Kostic</cite></span>
+												</blockquote>
+											</div>
+										</div>
+										<div class="gl-review-slide-pagination"></div>
+										<a href="#" class="gl-all-reviews lined">All 32 reviews<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+									</div>
+								</div>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-5.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Pandora</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-6.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Avanda</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col gl-col--addhid">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-2.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Addintional hidden</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gl gl--category">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-7.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Toffi</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-8.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Toffi</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col gl-col--category">
+								<div class="gl-col__a">
+									<div class="gl--category__content">
+										<img src="img/category-shoe.png" class="gl--category__img" alt=""/>
+										<span class="gl--category__kind">catalog</span>
+										<a href="#" class="gl--category__link lined">Accessories<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+										<span class="gl--category__descr">boudoir lingerie, boleros, capes and coats...</span>
+									</div>
+								</div>
+							</div>
+							<div class="gl-col gl-col--addhid">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-2.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Addintional hidden</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--fw-b">
+				<div class="fw-b">
+					<div class="fw-b-a">
+						<img src="img/banners/fw-banner-1--s.jpg" class="fw-b-img fw-b-img--s" alt=""/>
+						<img src="img/banners/fw-banner-1--m.jpg" class="fw-b-img fw-b-img--m" alt=""/>
+						<img src="img/banners/fw-banner-1.jpg" class="fw-b-img" alt=""/>
+					</div>
+					<div class="fw-b-b">
+						<div class="fw-b-cont">
+							<div class="fw-b-text">
+								<div class="fw-b-headers">
+										<a href="#" class="fw-b-subheader custom-lined">About Vanila</a>
+								</div>
+								<span class="fw-b-descr">VANILA wedding boutique was created with the idea to offer a bride the ultimate in choice and style using contemporary and classic design.</span>
+							</div>
+							<div class="fw-b-btns">
+								<a href="#" class="button light" role="button">read more<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+								<a href="#" class="appointment-btn">make an appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--novelty">
+				<header class="section-header">Novelty</header>
+				<div class="gl gl--normal">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-9.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Chantilly-10</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-10.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Toffi</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-11.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Pandora</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col gl-col--addhid">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-2.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Addintional hidden</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gl gl--selection">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<div class="gl-col gl-col--selection">
+								<div class="gl-col__a">
+									<img src="img/catalog/selection-2.jpg" class="gl-image js-of" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<a href="#" class="selection-text">
+										<span class="selection-header"><span class="selection-text-item custom-lined">25 dresses</span></span>
+										<span class="selection-subheader"><span class="selection-text-item custom-lined">in vintage</span></span>
+										<span class="selection-subheader"><span class="selection-text-item custom-lined">style</span></span>
+									</a>
+									<div class="selection-btns">
+										<a href="#" class="button light selection-btn" role="button">read more<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+										<a href="#" class="appointment-btn">make an appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+									</div>
+								</div>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-12.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Chantilly-10</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gl gl--featured">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<div class="gl-col gl-col--featured">
+								<div class="gl-col__a">
+									<div class="gl--featured__content">
+										<img src="img/ic/dress.svg" class="gl--featured__img" alt=""/>
+										<span class="gl--featured__text">Boutique «Vanila» is not limited number of dresses to&nbsp;try on</span>
+										<a href="#" class="gl--featured__link lined">About boutique<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+									</div>
+								</div>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-13.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Pandora</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-14.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Avanda</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">San Patrick</span></a>
+										<a href="#" class="tag"><span class="tag__name">ball gown</span></a>
+										<a href="#" class="tag"><span class="tag__name">a-line</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+							<div class="gl-col gl-col--addhid">
+								<a href="#" class="gl-col__a">
+									<img src="img/catalog/catalog-2.jpg" class="gl-image js-of" alt=""/>
+								</a>
+								<div class="gl-col__b">
+									<a href="#" class="gl-title">Addintional hidden</a>
+									<div class="gl-tags">
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+										<a href="#" class="tag"><span class="tag__name">tag item</span></a>
+									</div>
+								</div>
+								<a href="#" class="favourite js-toggle-fav"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--fw-b">
+				<div class="fw-b fw-b--right fw-b--overlay">
+					<div class="fw-b-a">
+						<img src="img/banners/fw-banner-2--s.jpg" class="fw-b-img fw-b-img--s" alt=""/>
+						<img src="img/banners/fw-banner-2--m.jpg" class="fw-b-img fw-b-img--m" alt=""/>
+						<img src="img/banners/fw-banner-2.jpg" class="fw-b-img" alt=""/>
+					</div>
+					<div class="fw-b-b">
+						<div class="fw-b-cont">
+							<div class="fw-b-text">
+								<div class="fw-b-headers">
+									<div>
+										<a href="#" class="fw-b-header custom-lined">Jesus</a>
+									</div>
+									<a href="#" class="fw-b-subheader custom-lined">collection 2016</a>
+								</div>
+								<span class="fw-b-descr">This is the perfect way to make a lasting first impression, so while you're putting the finishing touches to your make-up, let us introduce you to some models that we know you'll love.</span>
+							</div>
+							<div class="fw-b-btns">
+								<a href="#" class="button light" role="button">read more<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+								<a href="#" class="appointment-btn">make an appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--designers">
+				<header class="section-header">Designers</header>
+				<div class="gl gl--small gl--designers">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-1--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-1.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-2--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-2.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-3--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-3.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-4--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-4.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-5--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-5.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-6--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-6.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-7--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-7.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-8--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-8.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/designers/designer-9--hover.png" class="gl-image gl-image--hover" alt=""/>
+									<img src="img/designers/designer-9.png" class="gl-image" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<div class="gl-tags">
+										<span class="tag"><span class="tag__name">Jesus peiro</span></span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--instagram">
+				<div class="gl gl--small gl--instagram">
+					<div class="gl-cont">
+						<div class="gl-row">
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-1.jpg" class="gl-image js-of" alt=""/>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-2.jpg" class="gl-image js-of" alt=""/>
+								</div>
+							</a>
+							<a href="#" class="gl-col ig-go-follow ig-go-follow--headings">
+								<div class="gl-col__a">
+								</div>
+								<div class="gl-col__b">
+									<div class="ig-go-follow__text">
+										<span class="ig-go-follow__header">@vanilastudio</span>
+										<span class="ig-go-follow__subheader">Instagram</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-3.jpg" class="gl-image js-of" alt=""/>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-4.jpg" class="gl-image js-of" alt=""/>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-5.jpg" class="gl-image js-of" alt=""/>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-6.jpg" class="gl-image js-of" alt=""/>
+								</div>
+							</a>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-7.jpg" class="gl-image js-of" alt=""/>
+								</div>
+							</a>
+							<div class="gl-col ig-go-follow">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-go-follow.jpg" class="gl-image js-of" alt=""/>
+								</div>
+								<div class="gl-col__b">
+									<span href="#" class="button dark filled ig-go-follow-btn" role="button">follow us<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></span>
+								</div>
+							</div>
+							<a href="#" class="gl-col">
+								<div class="gl-col__a">
+									<img src="img/instagram/ig-8.jpg" class="gl-image js-of" alt=""/>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--articles section--dark">
+				<header class="section-header"><a href="#" class="section-header__link">Articles<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a></header>
+				<div class="articles">
+					<div class="articles-slider swiper-container">
+						<div class="swiper-wrapper">
+							<a href="#" class="articles-item swiper-slide">
+								<div class="articles-item-content">
+									<div class="_ai-a"><img src="img/articles/article-1.jpg" class="articles-item__p js-of" alt=""/></div>
+									<div class="_ai-b">
+										<span class="articles-item__h">Get to know the wedding pro</span>
+										<span class="articles-item__d">Vanila Wedding Store in Dubai is proud to present the first.</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="articles-item articles-item--wide swiper-slide">
+								<div class="articles-item-content">
+									<div class="_ai-a"><img src="img/articles/article-2.jpg" class="articles-item__p js-of" alt=""/></div>
+									<div class="_ai-b">
+										<span class="articles-item__h">How to tie a corset back</span>
+										<span class="articles-item__d">Vanila Wedding Store in Dubai is proud to present the first TRUNK SHOW in the Middle East and Africa of the Pronovias brand.</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="articles-item swiper-slide">
+								<div class="articles-item-content">
+									<div class="_ai-a"><img src="img/articles/article-3.jpg" class="articles-item__p js-of" alt=""/></div>
+									<div class="_ai-b">
+										<span class="articles-item__h">Ramadan promotion 2016</span>
+										<span class="articles-item__d">Vanila Wedding Store in Dubai is proud to present the first.</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="articles-item swiper-slide">
+								<div class="articles-item-content">
+									<div class="_ai-a"><img src="img/articles/article-4.jpg" class="articles-item__p js-of" alt=""/></div>
+									<div class="_ai-b">
+										<span class="articles-item__h">One of the most beautiful bridal photoshoots</span>
+										<span class="articles-item__d">Vanila Wedding Store in Dubai is proud to present.</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--map">
+				<div class="map-wrapper">
+					<div class="map-canvas" id="map-canvas"></div>
+					<div class="map-hint">
+						<div class="map-hint-content">
+							<div class="map-hint__header">Contacts</div>
+							<div class="map-hint__text">
+								<div class="map-hint__address">
+									<span class="map-hint__address-item">Dubai, UAE</span>
+									<span class="map-hint__address-item">Jumeirah Lakes Towers</span>
+									<span class="map-hint__address-item">Cluster N, JBC4.</span>
+									<span class="map-hint__address-item map-hint__address-item--detail">Ground Floor, Lobby area</span>
+								</div>
+								<div class="map-hint__phones">
+									<a href="tel:+97 1 04-553-9010"class="map-hint__phones-item map-hint__phones-item--phone">+97 1 04-553-9010</a>
+									<a href="tel:+971 50-785-8383"class="map-hint__phones-item map-hint__phones-item--whatsup">+971 50-785-8383</a>
+								</div>
+							</div>
+							<a href="#" class="button dark filled map-hint__button" role="button">make an appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer role="contentinfo">
+			<div class="footer-wrapper">
+				<div class="c-nfo">
+					<div class="c-nfo-about">
+						<div class="c-nfo-about-content">
+							<div class="c-nfo-about__col c-nfo-about__col--headers">
+								<span class="c-nfo-about-header">Bridal boutiques in&nbsp;Dubai</span>
+								<span class="c-nfo-about-header c-nfo-about-header--l2">Vanila Studio</span>
+							</div>
+							<div class="c-nfo-about__col">
+								<p class="c-nfo-about-text">
+									Our shop offers a wide choice of bridal gowns, which, if necessary will be adjusted at the height and figure. Also here you can find all the necessary accessories in order to place the necessary emphasis and complete the wedding look: jewelry, handbags, gloves, Bolero, veil, etc. Vanila wedding shop Dubai is not just a bridal boutique, it is a paradise for honeymooners. 
+								</p>
+								<p class="c-nfo-about-text">
+									Collector's dresses, exclusive wedding shoes and accessories are available for every beautiful bride. If you are preparing for the most important event in your life, visit our bridal boutiques in Dubai. VANILA boutique is ready to offer a huge range of ready-made dresses or to place an order for custom tailoring. 
+								</p>
+							</div>
+							<div class="c-nfo-about__col">
+								<p class="c-nfo-about-text">
+									Everything starts with... bridesmaid gowns! Charm and femininity, tenderness and lightness, grace and luxury — a number of adjectives could go on forever, when we are talking about the bride. Nice and long process of wedding preparation starts with finding that the one and only wedding gown. It sets the tone for the wedding celebration. 
+								</p>
+								<p class="c-nfo-about-text">
+									It exciders! And there is no small detail — it's the most Important Gown that should be the only one in any girl’s life!
+								</p>
+							</div>
+						</div>
+						<a href="#" class="c-nfo-about__more">Подробнее</a>
+					</div>
+					<div class="c-nfo-subscribe">
+						<div class="c-nfo-subscribe-header">Subscribe to news</div>
+						<div class="c-nfo-subscribe-header c-nfo-subscribe-header--l2">Receive our newsletter and get&nbsp;weekly updates</div>
+						<form class="c-nfo-subscribe-form" accept-charset="utf-8">
+							<div class="input-holder input-holder--subscribe">
+								<input class="subscribe-email" id="subscribe-email" type="email" name="email" placeholder="Enter your e-mail address">
+								<label for="subscribe-email" class="input-placeholder input-placeholder--error">example: mail@mail.com</label>
+							</div>
+							<button class="button dark subscribe-button" type="button">subscribe</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="footer-content">
+						<div class="footer-c footer-c--contact">
+							<a href="#" class="button dark filled footer-c-appointment" role="button">make an appointment<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon button-arr-ic"><use xlink:href="#arr-right"></use></svg></a>
+							<div class="cnt-wrp">
+								<a href="tel:+97 1 04-553-9010"class="cnt cnt--ph">+97 1 04-553-9010</a>
+							</div>
+							<div class="cnt-wrp">
+								<a href="tel:+971 50-785-8383"class="cnt cnt--whatsup">+971 50-785-8383</a>
+							</div>
+						</div>
+						<div class="footer-c footer-c--nav" role="navigation">
+							<ul class="footer-nav-list">
+								<li class="footer-nav-item footer-subheader">Catalog</li>
+								<li class="footer-nav-item"><a href="#" class="footer-nav-link">Bridal dresses</a></li>
+								<li class="footer-nav-item"><a href="#" class="footer-nav-link">Acsessories</a></li>
+							</ul>
+							<ul class="footer-nav-list">
+								<li class="footer-nav-item footer-subheader">Reviews</li>
+								<li class="footer-nav-item"><a href="#" class="footer-nav-link">Ask us a question</a></li>
+								<li class="footer-nav-item"><a href="#" class="footer-nav-link">Write a review</a></li>
+							</ul>
+							<ul class="footer-nav-list">
+								<li class="footer-nav-item footer-subheader">Boutique</li>
+								<li class="footer-nav-item"><a href="#" class="footer-nav-link">About</a></li>
+								<li class="footer-nav-item"><a href="#" class="footer-nav-link">Vacancies</a></li>
+							</ul>
+						</div>
+						<div class="footer-c footer-c--search">
+							<div class="footer-subheader">Search</div>
+							<form class="footer-search-form" accept-charset="utf-8">
+								<div class="input-holder input-holder--search">
+									<input class="footer-search" id="footer-search" type="search" name="search" placeholder="Search by name">
+									<button class="button return-type footer-search-submit" type="submit"></button>
+								</div>
+							</form>
+						</div>
+						<div class="footer-c footer-c--social">
+							<div class="footer-subheader">Social networks</div>
+							<ul class="footer-social-list">
+								<li class="footer-social-item"><a href="#" class="footer-social-link"><img src="img/ic/ig.svg" class="footer-social-ic footer-social-ic--ig" alt=""/></a></li>
+								<li class="footer-social-item"><a href="#" class="footer-social-link"><img src="img/ic/tw.svg" class="footer-social-ic footer-social-ic--tw" alt=""/></a></li>
+								<li class="footer-social-item"><a href="#" class="footer-social-link"><img src="img/ic/fb.svg" class="footer-social-ic footer-social-ic--fb" alt=""/></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-copyrights">
+						<div class="footer-copyrights-c footer-copyrights-c--l"><span class="owners">&copy; 2016 VANILA Studio</span></div>
+						<div class="footer-copyrights-c footer-copyrights-c--r"><span class="developers">Development — <a href="#" class="developers__link lined">Come on Design</a></span></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/libs/jquery-2.2.3.min.js"></script>
+	<script src="js/libs/swiper.jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOUEN7rzivg4i_7WHPV5pvuYdtXfTAoEk"></script>
+	<script src="js/main.js?v=1.0"></script>
+</body>
+</html>
